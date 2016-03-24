@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">IIM Code Standard</h1>
+      <h1 class="project-name">IIM Code Standards</h1>
       <h2 class="project-tagline">The coding standards for Internet and Interactive Media. </h2>
       <a href="https://github.com/unl/iim-code-standards" class="btn">View on GitHub</a>
       <a href="https://github.com/unl/iim-code-standards/zipball/master" class="btn">Download .zip</a>
@@ -19,31 +19,60 @@
     </section>
 
     <section class="main-content">
+      http://google.github.io/styleguide/htmlcssguide.xml
+      
+      When making whitespace/code quality changes, separate these commmits.
+      
       <h3>
-<a id="files-spacingnewlines" class="anchor" href="#files-spacingnewlines" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Files: Spacing/Newlines</h3>
+<a id="files-spacingnewlines" class="anchor" href="#files-spacingnewlines" aria-hidden="true">
+  <span aria-hidden="true" class="octicon octicon-link"></span></a>
+Files: Spacing/Newlines
+s</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+Tabs for HTML, CSS, JS. Spaces for PHP
 
-<h3>
-<a id="php" class="anchor" href="#php" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PHP</h3>
+4 spaces for PHP (given in PSR-2). Also 4 spaces for Ruby. Drupal's code standard is 2 spaces, use 2 spaces there. 
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="ruby" class="anchor" href="#ruby" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ruby</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>
+  Important points:
+  <ul>
+    <li>Newline at end of every file.</li>
+  </ul>
+</p>
 
 <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a id="php" class="anchor" href="#php" aria-hidden="true">
+  <span aria-hidden="true" class="octicon octicon-link"></span>
+</a>PHP</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<p>
+  PSR 2
+  PHPCS Linting Tool
+  
+</p>
 
+<h3>
+<a id="css" class="anchor" href="#css" aria-hidden="true">
+  <span aria-hidden="true" class="octicon octicon-link"></span>
+</a>CSS</h3>
+
+<p>
+  Important points:
+  <ul>
+    <li>Dashes between words in class and ID names. (kabob case)</li>
+    <li>Lowercase or uppercase colors are fine.</li>
+    <li>Order of properties is not important.</li>
+    <li>Separate selectors and declarations by new lines.</li>
+    <li>Use single quotation marks for attribute selectors and property values.</li>
+    <li>Omit quotes for URLs. </li>
+    <li>Please do not use LESS MQ convenience: put media queries at the bottom, and elements inside them.</li>
+  </ul>
+  
+</p>
+
+Optional tags (thml, body, head) are required.
+      
+      
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/unl/iim-code-standards">IIM Code Standard</a> is maintained by <a href="https://github.com/unl">unl</a>.</span>
 
